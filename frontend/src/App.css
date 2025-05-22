@@ -1,0 +1,17 @@
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 2rem;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
