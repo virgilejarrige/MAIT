@@ -1,0 +1,39 @@
+stages:
+  - build
+  - deploy
+  - cleanup
+
+variables:
+  PROJECT_NAME: "MAIT"
+  DOMAIN: "$DOMAIN"
+  ADMIN_USER: "$ADMIN_USER"
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker-compose build
+
+deploy:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - apk add --no-cache openssh
+    - ssh -o StrictHostKeyChecking=no root@$VM_IP "
+        mkdir -p /opt/$PROJECT_NAME &&
+        cd /opt/$PROJECT_NAME &&
+        git clone $CI_REPOSITORY_URL . &&
+        docker-compose up -d
+      "
+  environment:
+    name: production
+    url: https://$DOMAIN
+
+cleanup:
+  stage: cleanup
+  when: always
+  image: docker:latest
+  script:
+    - docker system prune -f --volumes
