@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1683901234567",
+    "name": "Financial Analyst",
+    "role": "Analyzes financial data and market trends",
+    "createdAt": "2025-05-22T10:00:00Z"
+  },
+  {
+    "id": "1683901234568",
+    "name": "Research Assistant",
+    "role": "Gathers and processes research data",
+    "createdAt": "2025-05-22T10:05:00Z"
+  },
+  {
+    "id": "1683901234569",
+    "name": "Report Writer",
+    "role": "Creates comprehensive reports and summaries",
+    "createdAt": "2025-05-22T10:10:00Z"
+  }
+]

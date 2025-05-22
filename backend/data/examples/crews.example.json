@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1683901234570",
+    "name": "Market Analysis Team",
+    "description": "Specialized in market research and financial analysis",
+    "agents": ["1683901234567", "1683901234568", "1683901234569"],
+    "createdAt": "2025-05-22T11:00:00Z"
+  },
+  {
+    "id": "1683901234571",
+    "name": "Research Squad",
+    "description": "Focused on data gathering and preliminary analysis",
+    "agents": ["1683901234568", "1683901234569"],
+    "createdAt": "2025-05-22T11:05:00Z"
+  }
+]

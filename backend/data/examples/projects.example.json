@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1683901234572",
+    "name": "Q2 2025 Market Analysis",
+    "description": "Comprehensive analysis of Q2 2025 market trends",
+    "priority": 1,
+    "status": "completed",
+    "crews": ["1683901234570"],
+    "results": {
+      "summary": "Market shows positive growth trends...",
+      "recommendations": ["Increase investment in tech sector", "Monitor emerging markets"],
+      "completedAt": "2025-05-21T15:00:00Z"
+    },
+    "createdAt": "2025-05-20T09:00:00Z"
+  },
+  {
+    "id": "1683901234573",
+    "name": "Competitor Analysis 2025",
+    "description": "Analysis of main competitors and market positioning",
+    "priority": 2,
+    "status": "running",
+    "crews": ["1683901234570", "1683901234571"],
+    "createdAt": "2025-05-22T09:00:00Z"
+  }
+]

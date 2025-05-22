@@ -106,6 +106,60 @@ MAIT/
 └── README.md              # Project documentation
 ```
 
+## Data Structure
+
+The application uses three main JSON files to store data. You can find examples in `/backend/data/examples/`.
+
+### agents.json
+Stores AI agent definitions with their roles and capabilities.
+
+Fields:
+- `id`: Unique identifier (timestamp-based)
+- `name`: Agent's name
+- `role`: Agent's specialized role or function
+- `createdAt`: Creation timestamp
+
+### crews.json
+Defines teams of agents that work together.
+
+Fields:
+- `id`: Unique identifier
+- `name`: Crew name
+- `description`: Crew's purpose and specialization
+- `agents`: Array of agent IDs that form this crew
+- `createdAt`: Creation timestamp
+
+### projects.json
+Contains project definitions and their execution status.
+
+Fields:
+- `id`: Unique identifier
+- `name`: Project name
+- `description`: Project details and objectives
+- `priority`: Importance level (1-5, 1 being highest)
+- `status`: Current state (`pending`, `running`, `completed`, `failed`)
+- `crews`: Array of crew IDs assigned to this project
+- `results`: (Optional) Project outcomes including:
+  - `summary`: Result overview
+  - `recommendations`: Action items or suggestions
+  - `completedAt`: Completion timestamp
+- `createdAt`: Creation timestamp
+
+Example files are provided in `/backend/data/examples/`. To initialize your own data:
+
+```bash
+# Create empty data files
+cd backend/data
+echo '[]' > agents.json
+echo '[]' > crews.json
+echo '[]' > projects.json
+
+# Or copy example files
+cp examples/agents.example.json agents.json
+cp examples/crews.example.json crews.json
+cp examples/projects.example.json projects.json
+```
+
 ## API Documentation
 
 ### Endpoints
