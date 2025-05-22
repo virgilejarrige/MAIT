@@ -1,5 +1,10 @@
 # MAIT (My AI Team)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/virgilejarrige/MAIT)](https://github.com/virgilejarrige/MAIT/issues)
+[![GitHub stars](https://img.shields.io/github/stars/virgilejarrige/MAIT)](https://github.com/virgilejarrige/MAIT/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/virgilejarrige/MAIT/pulls)
+
 An AI Project Management System that allows you to create and manage AI agents and crews for your projects.
 
 ## Features
@@ -20,7 +25,7 @@ An AI Project Management System that allows you to create and manage AI agents a
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/virgilejarrige/MAIT.git
 cd MAIT
 ```
 
